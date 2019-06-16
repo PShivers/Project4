@@ -19,7 +19,7 @@ urlpatterns = [
     path('comments/<int:pk>', views.CommentDetail.as_view(), name='comment_detail'),
     path('posts/comments/<int:pk>', views.CommentDetail.as_view(), name='comment_detail'),
     
-    path('podcasts/popular/', views.ListenAPI.as_view(), name='listenAPI'),
+    path('podcasts/popular/', views.Popular.as_view(), name='popular'),
     path('kanye/', views.KanyeAPI.as_view(), name='KanyeAPI'),
 
     # path('', include(router.urls))
