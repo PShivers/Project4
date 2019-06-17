@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { getSingleUser, deleteUser, updateUser } from '../util';
 
+
 class SingleUser extends Component {
   state = {
     user: {},
@@ -48,6 +49,8 @@ class SingleUser extends Component {
     return (
       <div>
         <h1>{this.state.user.name}</h1>
+        <img src={this.state.user.photo_url} alt="new" />
+
 
         <div>Edit User</div>
         <br />
