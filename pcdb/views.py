@@ -41,8 +41,8 @@ class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
 class Popular(View):
     def get(self, request):
         print('listen request')
-        url="https://listen-api.listennotes.com/api/v2/best_podcasts?genre_id=93&page=2&region=us&safe_mode=1"
-        headers = {"X-ListenAPI-Key": }
+        url="https://listen-api.listennotes.com/api/v2/best_podcasts?region=us&safe_mode=1"
+        headers = {"X-ListenAPI-Key": ""}
         r = requests.get(url, headers=headers)
         data = r.json()
         print(data)
