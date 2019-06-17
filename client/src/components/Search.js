@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const TopBar = styled.div`
@@ -44,8 +44,8 @@ class Search extends Component {
         </TopBar>
 
         <Navigation>
-          <Link to="/podcasts/popular">Podcasts</Link> | <a href="/users">Users</a>{' '}
-          | <a href="/posts">Posts</a>
+          <Link to="/podcasts/popular">Podcasts</Link> |
+          <Link to="/users">Users</Link>| <Link to="/posts">Posts</Link>
         </Navigation>
       </div>
     );
