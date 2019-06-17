@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from django.views import View
 from . import services
-from python-decouple import config
+from decouple import config
 
 API_KEY = config('API_KEY')
 
