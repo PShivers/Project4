@@ -9,7 +9,7 @@ from . import views
 # router.register('comments', views.CommentsView)
 
 urlpatterns = [
-    path('/users', views.UserList.as_view(), name='user_list'),
+    path('users/', views.UserList.as_view(), name='user_list'),
     path('users/<int:pk>', views.UserDetail.as_view(), name='user_detail'),
 
     path('posts/', views.PostList.as_view(), name='post_list'),
