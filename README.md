@@ -17,7 +17,8 @@ lorem
 
 <details>
 <summary>Component Tree & ERD</summary>
-<br>
-![Component Tree](/readme-images/ComponentTree.png)
-![Entity Relationship Diagram](/readme-images/ERD.png)
+
+![Component Tree](/readme-images/ComponentTree.jpg)
+![Entity Relationship Diagram](/readme-images/ERD.jpg)
+
 </details>
