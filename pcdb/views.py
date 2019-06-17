@@ -50,11 +50,11 @@ class Popular(View):
 
 class SinglePodcast(View):
     def get(self,request):
-    url = "https://listen-api.listennotes.com/api/v2/podcasts/4d3fe717742d4963a85562e9f84d8c79?next_episode_pub_date=1479154463000&sort=recent_first"
-    headers = {"X-ListenAPI-Key": }
-    response = requests.get(url, headers=headers)
-    data = r.json()
-    return JsonResponse(data)
+        url = "https://listen-api.listennotes.com/api/v2/podcasts/4d3fe717742d4963a85562e9f84d8c79?next_episode_pub_date=1479154463000&sort=recent_first"
+        headers = {"X-ListenAPI-Key": }
+        response = requests.get(url, headers=headers)
+        data = r.json()
+        return JsonResponse(data)
 
 
 class KanyeAPI(View):

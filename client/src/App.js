@@ -55,6 +55,7 @@ function App() {
             </Body>
           </Switch>
         </Main>
+        <KanyeQuote/>
       </Router>
     </AppWrapper>
   );

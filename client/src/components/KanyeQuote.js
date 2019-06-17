@@ -17,8 +17,8 @@ class KanyeQuote extends Component {
   render() {
     return (
       <div>
-        <div>YO check out this quote:</div>
         <div>{this.state.quote}</div>
+        <div>- Kanye West</div>
       </div>
     );
   }
