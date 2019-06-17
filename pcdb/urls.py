@@ -20,7 +20,7 @@ urlpatterns = [
     path('posts/comments/<int:pk>', views.CommentDetail.as_view(), name='comment_detail'),
     
     path('podcasts/popular/', views.Popular.as_view(), name='popular'),
-    path('podcasts/<int:pk>', views.SinglePodcast.as_view(), name='single_podcast'),
+    path('podcasts/<str:id>', views.SinglePodcast.as_view(), name='single_podcast'),
 
     path('kanye/', views.KanyeAPI.as_view(), name='KanyeAPI'),
     # path('', include(router.urls))

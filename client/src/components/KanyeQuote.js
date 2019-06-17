@@ -8,9 +8,9 @@ class KanyeQuote extends Component {
 
   componentDidMount() {
     getKanyeQuote().then(response => {
-      console.log(response);
+      // console.log(response);
       this.setState({ quote: response.data.quote });
-      console.log(this.state.quote);
+      // console.log(this.state.quote);
     });
   }
 

@@ -90,7 +90,7 @@ export function getPodcast(id) {
 }
 
 export function getKanyeQuote() {
-  console.log('kayne quote in util')
+  // console.log('kayne quote in util')
   return axios.get('/api/v1/kanye/');
 }
 
