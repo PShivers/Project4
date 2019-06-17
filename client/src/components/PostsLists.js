@@ -58,13 +58,13 @@ class PostsList extends Component {
               placeholder="Body"
               onChange={this.handleNewPostChange}
             />
-            {/* <input
+            <input
               name="created_at"
-              type="time"
+              type="text"
               placeholder="created_at"
               defaultValue='now'
               onChange={this.handleNewPostChange}
-            /> */}
+            />
             <input
               name="author"
               type="text"
