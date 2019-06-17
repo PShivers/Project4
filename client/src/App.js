@@ -48,11 +48,7 @@ function App() {
                 path="/podcasts/popular"
                 component={PopularPodcasts}
               />
-              <Route
-                exact
-                path="/podcasts/:id"
-                component={SinglePodcast}
-              />
+              <Route exact path="/podcasts/:id" component={SinglePodcast} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/users/:id" component={SingleUser} />
               <Route exact path="/posts" component={PostsList} />
@@ -61,7 +57,7 @@ function App() {
             </Body>
           </Switch>
         </Main>
-        <KanyeQuote/>
+        <KanyeQuote />
       </Router>
     </AppWrapper>
   );

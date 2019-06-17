@@ -61,7 +61,7 @@ class SinglePodcast(View):
 
 class KanyeAPI(View):
     def get(self, request):
-        print('yo')
+        print('kanye request')
         r = requests.get('https://api.kanye.rest')
         data = r.json()
         print(data)
