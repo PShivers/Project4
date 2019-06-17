@@ -62,8 +62,7 @@ class PostsList extends Component {
               name="created_at"
               type="text"
               placeholder="created_at"
-              defaultValue='now'
-              onChange={this.handleNewPostChange}
+               onChange={this.handleNewPostChange}
             />
             <input
               name="author"
