@@ -65,14 +65,3 @@ class KanyeAPI(View):
         print(data)
         return JsonResponse(data)
 
-
-class BooksPage(View):
-    def get(self, request):
-        print(request)
-        books_list = services.get_books('2009', 'edwards')
-        return render(request, 'books.html', books_list)
-    # def get(self, request,*args,**kwargs):
-    #     print(request.GET['test'])
-    #     response = requests.get('https://api.github.com/events')
-    #     return JsonResponse(response.json(), safe=False)
-    #     return response.text
