@@ -2,7 +2,7 @@ Project 4
 
 Thank you Damian for getting me unstuck while trying to establish ownership between entities!
 
-Thank you Shannon for helping me with my routes.
+Thank you Shannon for helping me with my routes!
 
 # About the Project
 
@@ -15,6 +15,13 @@ Podcast Data Base(PCDB) is a place for podcast lovers to find new podcasts or di
 [Trello board](https://trello.com/b/llubGrYh/project4)
 
 ## Technologies Used
+
+React
+Node.js
+Django
+Django Rest Framework
+
+## Planning Stage Materials
 
 <details>
 <summary>Component Tree & ERD</summary>
