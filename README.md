@@ -6,7 +6,7 @@ Thank you Shannon for helping me with my routes.
 
 # About the Project
 
-lorem
+Podcast Data Base(PCDB) is a place for podcast lovers to find new podcasts or discuss their favorites. It consists of a search engine that will return relevant podcasts and a message board where user can create profiles, post thoughts, or comment on other's posts.
 
 ## Links
 
@@ -21,5 +21,18 @@ lorem
 
 ![Component Tree](images/Component_Tree.JPG)
 ![Entity Relationship Diagram](images/ERD.JPG)
+
+</details>
+
+<details>
+<summary>Wire Frames</summary>
+
+![HomePage](images/HomePage.png)
+![PostsLists](images/ListofPosts.png)
+![SearchResults](images/SearchResults.png)
+![SinglePost](images/SinglePost.png)
+![UserLogin](images/UserLogin.png)
+![UserProfilePrivate](images/UserProfilePrivate.png)
+![UserProfilePublic](images/UserProfilePublic.png)
 
 </details>
