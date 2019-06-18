@@ -86,7 +86,7 @@ export function getPopularPodcasts() {
 
 export function getPodcast(id) {
   console.log(id)
-  return axios.get(`/api/v1/podcasts/${id}`);
+  return axios.get(`/api/v1/podcast/${id}`);
 }
 
 export function getKanyeQuote() {

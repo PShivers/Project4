@@ -25,13 +25,18 @@ const Navigation = styled.div`
   width: 100vw;
 `;
 
+const loginStyle = {
+  marginRight: "5%",
+  marginLeft: "5%"
+}
+
 class Search extends Component {
   state = {};
   render() {
     return (
       <div>
         <TopBar>
-          <h1>PcDB</h1>
+          <h1 style={loginStyle}>PcDB</h1>
 
           <SearchBar>
             <form>
@@ -40,7 +45,7 @@ class Search extends Component {
             <button>Search Podcasts</button>
           </SearchBar>
 
-          <span className="login">Login</span>
+          <span style={loginStyle} className="login">Login</span>
         </TopBar>
 
         <Navigation>

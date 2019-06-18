@@ -10,7 +10,7 @@ import Search from './components/Search';
 import SideBar from './components/SideBar';
 import PopularPodcasts from './components/PopularPodcasts';
 import KanyeQuote from './components/KanyeQuote';
-import SinglePodcast from './components/SinglePodcast';
+// import SinglePodcast from './components/SinglePodcast';
 
 const AppWrapper = styled.div`
   display: flex;
@@ -48,7 +48,7 @@ function App() {
                 path="/podcasts/popular"
                 component={PopularPodcasts}
               />
-              <Route exact path="/podcasts/:id" component={SinglePodcast} />
+              {/* <Route exact path="/podcast/:id" component={SinglePodcast} /> */}
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/users/:id" component={SingleUser} />
               <Route exact path="/posts" component={PostsList} />

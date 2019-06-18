@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Podcast = styled.div`
-  margin: 5px; 
+  margin: 5px;
 `;
 
 const Podcasts = styled.div`
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 `;
@@ -31,7 +31,7 @@ class PopularPodCasts extends Component {
         <h1>Popular PodCasts</h1>
         <Podcasts>
           {this.state.popularPodcasts.map(podcast => {
-            let linkVar = `/podcasts/${podcast.id}`;
+            let linkVar = `/podcast/${podcast.id}`;
             return (
               <Podcast>
                 <div className="podcast" key={podcast.id}>
