@@ -1,8 +1,8 @@
-Project 4
+# Project 4 - PCDB
 
-Thank you Damian for getting me unstuck while trying to establish ownership between entities!
+Thank you __Damian__ for getting me unstuck while trying to establish ownership between entities!
 
-Thank you Shannon for helping me with my routes!
+Thank you __Shannon__ for helping me with my routes!
 
 # About the Project
 
@@ -16,10 +16,10 @@ Podcast Data Base(PCDB) is a place for podcast lovers to find new podcasts or di
 
 ## Technologies Used
 
-React
-Node.js
-Django
-Django Rest Framework
+1. React
+2. Node.js
+3. Django
+4. Django Rest Framework
 
 ## Planning Stage Materials
 
