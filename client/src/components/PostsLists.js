@@ -21,7 +21,7 @@ class PostsList extends Component {
     const newPost = { ...this.state.newPost };
     newPost[attributeName] = attributeValue;
     this.setState({ newPost });
-    console.log(this.state.newPost)
+    console.log(this.state.newPost);
   };
 
   addNewPost = event => {
@@ -32,7 +32,7 @@ class PostsList extends Component {
   };
 
   addNewPostToPostList = newPost => {
-    console.log(newPost)
+    console.log(newPost);
     createPost(newPost).then(() => {
       getPosts().then(postsList => {
         this.setState({ posts: postsList.data });
@@ -42,9 +42,8 @@ class PostsList extends Component {
 
   render() {
     return (
-      <div>
-        
-      <form onSubmit={this.addNewPost}>
+      <div className="ui container segment">
+        <form onSubmit={this.addNewPost}>
           <div>
             <input
               name="title"
@@ -62,7 +61,7 @@ class PostsList extends Component {
               name="created_at"
               type="text"
               placeholder="created_at"
-               onChange={this.handleNewPostChange}
+              onChange={this.handleNewPostChange}
             />
             <input
               name="author"

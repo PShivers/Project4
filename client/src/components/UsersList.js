@@ -21,7 +21,7 @@ class UsersList extends Component {
     const newUser = { ...this.state.newUser };
     newUser[attributeName] = attributeValue;
     this.setState({ newUser });
-    console.log(this.state.newUser)
+    console.log(this.state.newUser);
   };
 
   addNewUser = event => {
@@ -32,7 +32,7 @@ class UsersList extends Component {
   };
 
   addNewUserToUserList = newUser => {
-    console.log(newUser)
+    console.log(newUser);
     createUser(newUser).then(() => {
       getUsers().then(usersList => {
         this.setState({ users: usersList.data });
@@ -42,7 +42,7 @@ class UsersList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ui segment ">
         <h1>Users</h1>
         <div className="listOfPosts">
           {this.state.users.map(user => {

@@ -42,18 +42,16 @@ class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class Popular(View):
     def get(self, request):
-        print('listen request')
         url="https://listen-api.listennotes.com/api/v2/best_podcasts?region=us&safe_mode=1"
         headers = {"X-ListenAPI-Key": API_KEY}
         r = requests.get(url, headers=headers)
         data = r.json()
-        print(data)
         return JsonResponse(data)
 
 class SinglePodcast(View):
     def get(self,request, id):
         print(request)
-        url = {"https://listen-api.listennotes.com/api/v2/podcasts/${id}?sort=recent_first"}
+        url = f"https://listen-api.listennotes.com/api/v2/podcasts/{id}?sort=recent_first"
         headers = {"X-ListenAPI-Key": API_KEY}
         response = requests.get(url, headers=headers)
         data = r.json()
@@ -61,9 +59,7 @@ class SinglePodcast(View):
 
 class KanyeAPI(View):
     def get(self, request):
-        print('kanye request')
         r = requests.get('https://api.kanye.rest')
         data = r.json()
-        print(data)
         return JsonResponse(data)
 

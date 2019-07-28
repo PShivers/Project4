@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import SearchBar from './SearchBar';
+import Navigation from './Navigation';
+
 const TopBar = styled.div`
   display: flex;
   align-items: center;
@@ -10,48 +13,51 @@ const TopBar = styled.div`
   width: 100vw;
 `;
 
-const SearchBar = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: papayawhip;
-`;
-
-const Navigation = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: skyblue;
-  width: 100vw;
-`;
+// const Navigation = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   background: rgba(0, 0, 0, 0.5);
+//   border: 2px red;
+//   width: 100vw;
+// `;
 
 const loginStyle = {
-  marginRight: "5%",
-  marginLeft: "5%"
-}
+  marginRight: '5%',
+  marginLeft: '5%'
+};
 
 class Search extends Component {
   state = {};
   render() {
     return (
       <div>
-        <TopBar>
-          <h1 style={loginStyle}>PcDB</h1>
-
-          <SearchBar>
-            <form>
-              <input type="text" name="search" />
-            </form>
-            <button>Search Podcasts</button>
-          </SearchBar>
-
-          <span style={loginStyle} className="login">Login</span>
-        </TopBar>
-
-        <Navigation>
-          <Link to="/podcasts/popular">Podcasts</Link> |
-          <Link to="/users">Users</Link>| <Link to="/posts">Posts</Link>
-        </Navigation>
+        <div
+          className="navigation ui menu"
+          style={{ backgroundColor: 'tomato' }}
+        >
+          <div className="header item">Pcdb</div>
+          <Link to="/podcasts/popular" className="item">
+            Podcasts
+          </Link>
+          <Link to="/users" className="item">
+            Users
+          </Link>
+          <Link to="/posts" className="item">
+            Posts
+          </Link>
+          <div className="right menu">
+            <div className="item">
+              <div className="ui icon input">
+                <input type="text" placeholder="Search..." />
+                <i className="search link icon" />
+              </div>
+            </div>
+            <Link to="/login" className="ui item">
+              Login
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

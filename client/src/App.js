@@ -10,7 +10,8 @@ import Search from './components/Search';
 import SideBar from './components/SideBar';
 import PopularPodcasts from './components/PopularPodcasts';
 import KanyeQuote from './components/KanyeQuote';
-// import SinglePodcast from './components/SinglePodcast';
+import SinglePodcast from './components/SinglePodcast';
+import Login from './components/Login';
 
 const AppWrapper = styled.div`
   display: flex;
@@ -36,11 +37,10 @@ const Body = styled.div`
 
 function App() {
   return (
-    <AppWrapper>
+    <AppWrapper className="ui segment" style={{margin: '10px'}}>
       <Router>
         <Search />
-        <Main>
-          <SideBar />
+        <Main style={{ marginTop: '10px' }}>
           <Switch>
             <Body>
               <Route
@@ -48,16 +48,16 @@ function App() {
                 path="/podcasts/popular"
                 component={PopularPodcasts}
               />
-              {/* <Route exact path="/podcast/:id" component={SinglePodcast} /> */}
+              <Route exact path="/podcast/:id" component={SinglePodcast} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/users/:id" component={SingleUser} />
               <Route exact path="/posts" component={PostsList} />
               <Route exact path="/posts/:id" component={SinglePost} />
-              <Route exact path="/kanye" component={KanyeQuote} />
+              <Route exact path="/login" component={Login} />
             </Body>
           </Switch>
         </Main>
-        <KanyeQuote />
+        {/* <KanyeQuote /> */}
       </Router>
     </AppWrapper>
   );
